@@ -1,0 +1,13 @@
+body{
+    background-color: aqua;
+}
+p{
+    font-weight: 800;
+    border: solid;
+    border-radius: 50px;
+    width: 320px;
+    padding: 20px;
+    margin: 0 auto;
+    background-color: azure;
+    /* font-size: 17.8px; */
+}
