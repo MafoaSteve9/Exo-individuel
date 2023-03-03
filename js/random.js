@@ -7,7 +7,7 @@ function askNumber() {
 
 function didIwin(givenNumber) {
     while (givenNumber != askNumber) {
-        givenNumber = prompt("Entrez un nombre !")
+        givenNumber = prompt("Entrez un nombre entre 0 et 50 !")
 
         if (givenNumber < 22) {
             alert("plus grand")
@@ -16,14 +16,13 @@ function didIwin(givenNumber) {
             alert("plus petit")
 
         } else if (givenNumber == 22) {
-            document.querySelector('p').innerHTML = `Bravo ! Vous avez deviné le nombre "${givenNumber}" 😎`
+            alert(`Bravo ! Vous avez deviné le nombre "${givenNumber}" 😎`)
             return true
-        }
-          else {
+        } else {
             return false
-          }
+        }
 
     }
 }
-
+askNumber()
 didIwin()
